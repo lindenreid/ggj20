@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Location_Forest
   m_EditorClassIdentifier: 
   Name: Forest
+  LocationType: 1
   Icon: {fileID: 21300000, guid: 3cecbd575e9ccee47927cdcf19254f9f, type: 3}
   Background: {fileID: 21300000, guid: 3bfce31feebbeb64a8d1311b20596d15, type: 3}

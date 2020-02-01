@@ -13,6 +13,10 @@ public class Navigation : MonoBehaviour
 
     private LocationSO ActiveLocation;
 
+    // this bad, idc
+    public GameObject GraveLocation;
+    public GameObject ForestLocation;
+
     // ------------------------------------------------------------------------
     // Functions
     // ------------------------------------------------------------------------
@@ -29,6 +33,19 @@ public class Navigation : MonoBehaviour
         MapReturnButton.SetActive(true);
 
         LocationBackground.sprite = locationSO.Background;
+
+        // i don't literally care that this is bad
+        // scenes who? idk her
+        switch(locationSO.LocationType) {
+            case LocationType.Grave :
+                GraveLocation.SetActive(true);
+                ForestLocation.SetActive(false);
+                break;
+            case LocationType.Forest : 
+                GraveLocation.SetActive(false);
+                ForestLocation.SetActive(true);
+                break;
+        }
 
         ActiveLocation = locationSO;
     }
