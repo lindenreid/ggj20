@@ -13,19 +13,19 @@ public class ItemDialogueUI : MonoBehaviour
     public Text Title;
     public Text Description;
 
-    private ItemSO m_itemSO;
+    private Item m_item;
     
     // ------------------------------------------------------------------------
     // Functions
     // ------------------------------------------------------------------------
-    public void Open (ItemSO item) {
+    public void Open (Item item) {
         gameObject.SetActive(true);
 
-        Title.text = item.Name;
-        Description.text = item.Description;
-        ItemImage.sprite = item.Icon;
+        Title.text = item.ItemSO.Name;
+        Description.text = item.ItemSO.Description;
+        ItemImage.sprite = item.ItemSO.Icon;
 
-        m_itemSO = item;
+        m_item = item;
     }
 
     // ------------------------------------------------------------------------
@@ -35,7 +35,8 @@ public class ItemDialogueUI : MonoBehaviour
 
     // ------------------------------------------------------------------------
     public void AddToInventory () {
-        Inventory.AddItem(m_itemSO);
+        m_item.AddToInventory();
+        Inventory.AddItem(m_item.ItemSO);
 
         Close();
         InventoryUI.Open();

@@ -1,27 +1,28 @@
 using UnityEngine;
 
-public class Item : ClickDetection
+[CreateAssetMenu(fileName = "Chat", menuName = "GreenTea/ScriptableObjects/Chat", order = 1)]
+public class ChatSO : ScriptableObject 
 {
     // ------------------------------------------------------------------------
     // Variables
     // ------------------------------------------------------------------------
-    public ItemDialogueUI ItemDialogueUI;
-    public ItemSO ItemSO;
+    public int ID;
+    public SpiritSO SpiritSO;
+    public MessageSO[] Messages; // all of the messages
+
+    // ------------------------------------------------------------------------
+    // Properties
+    // ------------------------------------------------------------------------
+    public MessageSO FirstMessage {
+        get { return Messages[0]; }
+    }
 
     // ------------------------------------------------------------------------
     // Functions
     // ------------------------------------------------------------------------
-    protected override void OnClick () {
-        ItemDialogueUI.Open(this);
-    }
-
-    // ------------------------------------------------------------------------
-    public void AddToInventory () {
-        gameObject.SetActive(false);
-    }
-
-    // ------------------------------------------------------------------------
-    public void RemoveFromInventory () {
-        gameObject.SetActive(true);
+    public void Reset () {
+        foreach(MessageSO message in Messages) {
+            message.Reset();
+        }
     }
 }
