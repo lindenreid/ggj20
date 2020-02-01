@@ -12,8 +12,6 @@ public class Navigation : MonoBehaviour
     public GameObject LocationParent;
     public GameObject MapReturnButton;
 
-    public SpriteRenderer LocationBackground;
-
     private LocationSO ActiveLocation;
 
     // this bad, idc
@@ -34,8 +32,6 @@ public class Navigation : MonoBehaviour
         MapParent.SetActive(false);
         LocationParent.SetActive(true);
         MapReturnButton.SetActive(true);
-
-        LocationBackground.sprite = locationSO.Background;
 
         // i don't literally care that this is bad
         // scenes who? idk her
