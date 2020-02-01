@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemDialogueUI : MonoBehaviour
+public class ItemDialogueUI : UIScreen
 {
     // ------------------------------------------------------------------------
     // Variables

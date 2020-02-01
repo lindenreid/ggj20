@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.UI;
 
-public class ChatUI : MonoBehaviour
+public class ChatUI : UIScreen
 {
     // ------------------------------------------------------------------------
     // Variables
@@ -29,7 +29,13 @@ public class ChatUI : MonoBehaviour
     }
 
     // ------------------------------------------------------------------------
+    protected override void OnEnable () {}
+    protected override void OnDisable () {}
+
+    // ------------------------------------------------------------------------
     private void DrawChatBubble (MessageSO message, int index) {
+        FireOpened();
+
         SpiritChatParent.SetActive(true);
         PlayerChatParent.SetActive(false);
         ExitButton.SetActive(false);
@@ -43,6 +49,8 @@ public class ChatUI : MonoBehaviour
 
     // ------------------------------------------------------------------------
     private void DrawChatOptionBubble (MessageSO message, int option) {
+        FireOpened();
+
         SpiritChatParent.SetActive(false);
         PlayerChatParent.SetActive(true);
         ExitButton.SetActive(false);
@@ -72,6 +80,8 @@ public class ChatUI : MonoBehaviour
 
     // ------------------------------------------------------------------------
     public void Exit () {
+        FireClosed();
+
         SpiritChatParent.SetActive(false);
         PlayerChatParent.SetActive(false);
         ExitButton.SetActive(false);

@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Navigation : MonoBehaviour
@@ -5,6 +7,7 @@ public class Navigation : MonoBehaviour
     // ------------------------------------------------------------------------
     // Variables
     // ------------------------------------------------------------------------
+    public List<UIScreen> UIScreens;
     public GameObject MapParent;
     public GameObject LocationParent;
     public GameObject MapReturnButton;
