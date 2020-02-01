@@ -10,14 +10,27 @@ public class InventoryUI : MonoBehaviour
     public GameObject ItemPrefab;
     public Transform InventoryParent;
 
-    public GameObject InventoryButton;
+    private bool m_open;
 
     // ------------------------------------------------------------------------
     // Functions
     // ------------------------------------------------------------------------
+    public void ToggleOpen () {
+        if(m_open) {
+            Close();
+        } else {
+            Open();
+        }
+    }
+
+    // ------------------------------------------------------------------------
     public void Open () {
         gameObject.SetActive(true);
-        InventoryButton.SetActive(false);
+        m_open = true;
+
+        if(m_open) {
+            Clear();
+        }
 
         foreach(ItemSO item in Inventory.Items) {
             GameObject itemObj = Instantiate(ItemPrefab, InventoryParent)
@@ -32,8 +45,13 @@ public class InventoryUI : MonoBehaviour
     // ------------------------------------------------------------------------
     public void Close () {
         gameObject.SetActive(false);
-        InventoryButton.SetActive(true);
+        m_open = false;
 
+        Clear();
+    }
+
+    // ------------------------------------------------------------------------
+    private void Clear () {
         foreach(Transform t in InventoryParent.transform) {
             Destroy(t.gameObject);
         }
