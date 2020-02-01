@@ -7,6 +7,7 @@ public class Navigation : MonoBehaviour
     // ------------------------------------------------------------------------
     public GameObject MapParent;
     public GameObject LocationParent;
+    public GameObject MapReturnButton;
 
     public SpriteRenderer LocationBackground;
 
@@ -18,12 +19,14 @@ public class Navigation : MonoBehaviour
     public void OpenMap () {
         MapParent.SetActive(true);
         LocationParent.SetActive(false);
+        MapReturnButton.SetActive(false);
     }
 
     // ------------------------------------------------------------------------
     public void OpenLocation (LocationSO locationSO) {
         MapParent.SetActive(false);
         LocationParent.SetActive(true);
+        MapReturnButton.SetActive(true);
 
         LocationBackground.sprite = locationSO.Background;
 
