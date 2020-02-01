@@ -7,11 +7,16 @@ public class ItemUI : MonoBehaviour
     // Variables
     // ------------------------------------------------------------------------
     public Image Image;
+    public Button Button;
 
     // ------------------------------------------------------------------------
     // Functions
     // ------------------------------------------------------------------------
-    public void SetItem (ItemSO itemSO) {
-        Image.sprite = itemSO.Icon;
+    public void SetItem (Item item, ItemDialogueUI itemUI) {
+        Image.sprite = item.ItemSO.Icon;
+
+        Button.onClick.AddListener(
+            delegate {itemUI.Open(item);}
+        );
     }
 }

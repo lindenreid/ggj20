@@ -6,6 +6,7 @@ public class InventoryUI : MonoBehaviour
     // Variables
     // ------------------------------------------------------------------------
     public Inventory Inventory;
+    public ItemDialogueUI ItemDialogueUI;
     
     public GameObject ItemPrefab;
     public Transform InventoryParent;
@@ -32,12 +33,12 @@ public class InventoryUI : MonoBehaviour
             Clear();
         }
 
-        foreach(ItemSO item in Inventory.Items) {
+        foreach(Item item in Inventory.Items) {
             GameObject itemObj = Instantiate(ItemPrefab, InventoryParent)
                 as GameObject;
             ItemUI itemUI = itemObj.GetComponent<ItemUI>();
             if(itemUI != null) {
-                itemUI.SetItem(item);
+                itemUI.SetItem(item, ItemDialogueUI);
             }
         }
     }

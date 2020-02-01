@@ -2,7 +2,8 @@ using UnityEngine;
 
 public enum Spirit {
     Player = 0,
-    Rabbit = 1
+    Rabbit = 1,
+    Dog = 2
 }
 
 [CreateAssetMenu(fileName = "Message", menuName = "GreenTea/ScriptableObjects/Message", order = 1)]

@@ -13,6 +13,9 @@ public class ItemDialogueUI : UIScreen
     public Text Title;
     public Text Description;
 
+    public GameObject AddButton;
+    public GameObject RemoveButton;
+
     private Item m_item;
     
     // ------------------------------------------------------------------------
@@ -25,6 +28,14 @@ public class ItemDialogueUI : UIScreen
         Description.text = item.ItemSO.Description;
         ItemImage.sprite = item.ItemSO.Icon;
 
+        if(item.Owned) {
+            AddButton.SetActive(false);
+            RemoveButton.SetActive(true);
+        } else {
+            AddButton.SetActive(true);
+            RemoveButton.SetActive(false);
+        }
+
         m_item = item;
     }
 
@@ -36,7 +47,16 @@ public class ItemDialogueUI : UIScreen
     // ------------------------------------------------------------------------
     public void AddToInventory () {
         m_item.AddToInventory();
-        Inventory.AddItem(m_item.ItemSO);
+        Inventory.AddItem(m_item);
+
+        Close();
+        InventoryUI.Open();
+    }
+
+    // ------------------------------------------------------------------------
+    public void RemoveFromInventory () {
+        m_item.RemoveFromInventory();
+        Inventory.RemoveItem(m_item);
 
         Close();
         InventoryUI.Open();

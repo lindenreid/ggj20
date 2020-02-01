@@ -8,6 +8,11 @@ public class Item : ClickDetection
     public ItemDialogueUI ItemDialogueUI;
     public ItemSO ItemSO;
 
+    private bool m_owned;
+    public bool Owned {
+        get { return m_owned; }
+    }
+
     // ------------------------------------------------------------------------
     // Functions
     // ------------------------------------------------------------------------
@@ -18,10 +23,12 @@ public class Item : ClickDetection
     // ------------------------------------------------------------------------
     public void AddToInventory () {
         gameObject.SetActive(false);
+        m_owned = true;
     }
 
     // ------------------------------------------------------------------------
     public void RemoveFromInventory () {
         gameObject.SetActive(true);
+        m_owned = false;
     }
 }
