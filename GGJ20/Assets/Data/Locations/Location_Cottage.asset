@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c24130be1f74f7e4996f436d9dfd1abc, type: 3}
-  m_Name: Location_Forest
+  m_Name: Location_Cottage
   m_EditorClassIdentifier: 
-  Name: Forest
-  LocationType: 1
+  Name: Cottage
+  LocationType: 2
   Icon: {fileID: 21300000, guid: 3cecbd575e9ccee47927cdcf19254f9f, type: 3}
   Background: {fileID: 21300000, guid: 3bfce31feebbeb64a8d1311b20596d15, type: 3}

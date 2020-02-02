@@ -2,7 +2,8 @@ using UnityEngine;
 
 public enum LocationType {
     Grave = 0,
-    Forest = 1
+    Forest = 1,
+    Cottage = 2
 }
 
 [CreateAssetMenu(fileName = "Location", menuName = "GreenTea/ScriptableObjects/Location", order = 1)]

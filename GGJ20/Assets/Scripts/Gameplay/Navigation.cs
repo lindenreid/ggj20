@@ -28,6 +28,7 @@ public class Navigation : MonoBehaviour
 
     // this bad, idc
     public GameObject GraveLocation;
+    public GameObject CottageLocation;
     public GameObject ForestLocation;
 
     // ------------------------------------------------------------------------
@@ -89,10 +90,17 @@ public class Navigation : MonoBehaviour
             case LocationType.Grave :
                 GraveLocation.SetActive(true);
                 ForestLocation.SetActive(false);
+                CottageLocation.SetActive(false);
                 break;
             case LocationType.Forest : 
                 GraveLocation.SetActive(false);
                 ForestLocation.SetActive(true);
+                CottageLocation.SetActive(false);
+                break;
+            case LocationType.Cottage : 
+                GraveLocation.SetActive(false);
+                ForestLocation.SetActive(false);
+                CottageLocation.SetActive(true);
                 break;
         }
 
