@@ -12,6 +12,10 @@ public class SpiritObj : ClickDetection
     // Functions
     // ------------------------------------------------------------------------
     protected override void OnClick () {
-        ChatRunner.StartConversation(SpiritSO.Chat);
+        if(SpiritSO.VisitedChat) {
+            ChatRunner.StartConversation(SpiritSO.SecondChat);
+        } else {
+            ChatRunner.StartConversation(SpiritSO.Chat);
+        }
     }
 }

@@ -3,12 +3,16 @@ using System.Linq;
 
 using UnityEngine;
 
+// this class is op
 public class Gravestone : ClickDetection
 {
     // ------------------------------------------------------------------------
     // Variables
     // ------------------------------------------------------------------------
+    public GameController GameController;
+
     public ChatSO SuccessChat;
+    public ChatSO NegativeChat;
     public ChatSO FailureChat;
 
     public Inventory Inventory;
@@ -24,10 +28,14 @@ public class Gravestone : ClickDetection
         
         Inventory.ClearInventory();
         
-        if(success) {
+        if(!success) {
+            ChatRunner.StartConversation(FailureChat);
+        } else if(GameController.GetWasDialoguePositive()) {
+            ChatRunner.MarkWaitingForGameEnd();
             ChatRunner.StartConversation(SuccessChat);
         } else {
-            ChatRunner.StartConversation(FailureChat);
+            ChatRunner.MarkWaitingForGameEnd();
+            ChatRunner.StartConversation(NegativeChat);
         }
     }
 }

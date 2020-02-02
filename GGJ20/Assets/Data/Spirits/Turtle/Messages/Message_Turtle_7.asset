@@ -18,6 +18,7 @@ MonoBehaviour:
   Delays: []
   Options:
   - How did he help you?
+  MessageTypes: 00000000
   Branch:
   - {fileID: 11400000, guid: bc57b80b18091114facd02b11972578b, type: 2}
-  Selection: {fileID: 0}
+  Selection: {fileID: 11400000, guid: bc57b80b18091114facd02b11972578b, type: 2}

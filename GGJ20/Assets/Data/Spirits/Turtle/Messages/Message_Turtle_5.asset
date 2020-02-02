@@ -19,7 +19,8 @@ MonoBehaviour:
   Options:
   - How do you feel about him now?
   - Did he betray you too?
+  MessageTypes: 0100000002000000
   Branch:
   - {fileID: 11400000, guid: 52f8b356587fa75459726a3bb30fcc7d, type: 2}
   - {fileID: 11400000, guid: 52f8b356587fa75459726a3bb30fcc7d, type: 2}
-  Selection: {fileID: 0}
+  Selection: {fileID: 11400000, guid: 52f8b356587fa75459726a3bb30fcc7d, type: 2}

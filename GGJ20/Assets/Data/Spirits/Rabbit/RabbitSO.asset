@@ -15,3 +15,5 @@ MonoBehaviour:
   Name: Rabbit
   Icon: {fileID: 21300000, guid: 8aa72ca4cfa3ad14c85303b783bcb0ff, type: 3}
   Chat: {fileID: 11400000, guid: 595dee4a002864a49bbee5474e0a1bcc, type: 2}
+  SecondChat: {fileID: 11400000, guid: e585d079509f6e4469b3a50f4bc09a79, type: 2}
+  VisitedChat: 1
