@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Neg_0
+  m_EditorClassIdentifier: 
+  Node: 0
+  Sender: 2
+  Messages:
+  - "The Fish called for a meeting. Slowly, the others arrived one by one. First came
+    the Rabbit, hobbling without his old lamp. Next came the Bird, swooping down before
+    resting neatly on a branch. Lastly, the Turtle crawled over laboriously, but greeted
+    everyone with a small smile. They watched as you carefully place their offerings
+    on the Sorcerer\u2019s grave."
+  - "The Fish relayed the message to the others, asking to forgive the Sorcerer. Upon
+    hearing the details of the discussion, the others murmured to each other. A grim
+    blanket clung onto the atmosphere. Even the Turtle\u2019s smile was nowhere to
+    be seen."
+  - 'Suddenly, wind flew in, wrapping itself around the grave. The offerings quivered
+    in the air as they clung onto the weight of gravity. However, the wind was too
+    strong and swept away the offerings.  '
+  - 'A deep silence fell upon the forest. You look at the faces of the spirits. They
+    do not return your gaze, but instead cast a faraway look at the tops of the trees.
+    You realize that the Sorcerer is freed from his chains and passed on into the
+    afterlife. But was this really for the best? Without a word, the spirits quietly
+    leave the gravesite and disappear into the depths of the trees.  '
+  Delays:
+  - 20
+  - 20
+  - 20
+  - 20
+  Options: []
+  MessageTypes: 
+  Branch: []
+  Selection: {fileID: 0}
