@@ -11,6 +11,6 @@ public class MapIcon : ClickDetection
     // Functions
     // ------------------------------------------------------------------------
     protected override void OnClick () {
-        Navigation.OpenLocation(Location); 
+        Navigation.OpenLocation(Location, transform); 
     }
 }
