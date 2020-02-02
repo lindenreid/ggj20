@@ -9,6 +9,12 @@ public enum Spirit {
     Bird = 5
 }
 
+public enum MessageType {
+    Neutral = 0,
+    Positive = 1,
+    Negative = 2
+}
+
 [CreateAssetMenu(fileName = "Message", menuName = "GreenTea/ScriptableObjects/Message", order = 1)]
 public class MessageSO : ScriptableObject 
 {
@@ -22,6 +28,7 @@ public class MessageSO : ScriptableObject
     // all of the following map by index
     public float[] Delays; // the delay before the corresponding message shows
     public string[] Options; // the text options
+    public MessageType[] MessageTypes; // how the message choice affects gameplay
     public MessageSO[] Branch; // the next message
 
     public MessageSO Selection;

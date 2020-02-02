@@ -15,10 +15,12 @@ MonoBehaviour:
   Node: 1
   Sender: 0
   Messages: []
+  Delays: []
   Options:
   - gay baby
   - l a r g
+  MessageTypes: 0000000000000000
   Branch:
   - {fileID: 11400000, guid: a7a7618e4db5ff546b0ff88e2fe1c68f, type: 2}
   - {fileID: 11400000, guid: 7e0843bbe305d8d4cbd07d3e867d5682, type: 2}
-  Selection: {fileID: 0}
+  Selection: {fileID: 11400000, guid: a7a7618e4db5ff546b0ff88e2fe1c68f, type: 2}

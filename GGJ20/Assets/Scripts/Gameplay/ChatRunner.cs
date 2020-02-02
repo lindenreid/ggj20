@@ -7,6 +7,8 @@ public class ChatRunner : MonoBehaviour
     // ------------------------------------------------------------------------
     // Variables
     // ------------------------------------------------------------------------
+    public GameController GameController;
+
     // hook into these with your UI class in order to draw chat bubbles
     public delegate void MessageDelegate(MessageSO message, int index);
     public event MessageDelegate VisitedMessage;
@@ -164,6 +166,9 @@ public class ChatRunner : MonoBehaviour
         // run chosen message
         m_RunBubblesCoroutine = RunChatBubbles(message);
         StartCoroutine(m_RunBubblesCoroutine);
+
+        // tell game controller about message type
+        GameController.RecordDialogueChoice(message.MessageTypes[selection]);
 
         // fire events
         SelectedOption();

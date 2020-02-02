@@ -741,7 +741,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Navigation: {fileID: 1988944576}
+  GameController: {fileID: 1988944579}
   SuccessChat: {fileID: 11400000, guid: a50989b9fd2ba5d48867783371cf330f, type: 2}
+  NegativeChat: {fileID: 11400000, guid: 49627dc11287fbe408679b942ece9b4e, type: 2}
   FailureChat: {fileID: 11400000, guid: bcfb079a93e1d314997d30303d1a45c8, type: 2}
   Inventory: {fileID: 1988944578}
   ChatRunner: {fileID: 1988944580}
@@ -4022,6 +4024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a8fc3f3b7b4aa141b8071fbf585d902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 1988944579}
   MaxTimeBetweenMessages: 2
 --- !u!1 &2010557648
 GameObject:
