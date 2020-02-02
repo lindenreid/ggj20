@@ -7,7 +7,7 @@ using UnityEngine;
 public class MaskFade : MonoBehaviour
 {
     [SerializeField]
-    float m_ScaleTime = 0.75f;
+    float m_ScaleTime = 2.0f;
 
     [SerializeField]
     float m_ScaleDelay = 0.75f;
@@ -17,7 +17,10 @@ public class MaskFade : MonoBehaviour
     
     Vector3 m_EndScale;
     
-    const float k_MaxSize = 3.5f;
+    const float k_MaxSize = 2.5f;
+
+    [SerializeField]
+    GameObject m_BackButton;
 
     void Start()
     {
@@ -33,7 +36,7 @@ public class MaskFade : MonoBehaviour
     IEnumerator DelayScale()
     {
         yield return new WaitForSeconds(m_ScaleDelay);
-        m_SpriteTransform.DOScale(m_EndScale, m_ScaleTime);
+        m_SpriteTransform.DOScale(m_EndScale, m_ScaleTime).OnComplete(()=> m_BackButton.SetActive(true));
     }
 
     void OnDisable()
@@ -43,6 +46,7 @@ public class MaskFade : MonoBehaviour
 
     public void ResetMask()
     {
+        DOTween.Kill(m_SpriteTransform);
         m_SpriteTransform.localScale = Vector3.zero;
     }
 }
