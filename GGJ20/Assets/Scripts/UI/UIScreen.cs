@@ -13,21 +13,25 @@ public class UIScreen : MonoBehaviour
 
     // ------------------------------------------------------------------------
     protected virtual void OnEnable () {
-        Opened();
+        if(Opened != null)
+            Opened();
     }
 
     // ------------------------------------------------------------------------
     protected virtual void OnDisable () {
-        Closed();
+        if(Closed != null)
+            Closed();
     }
 
     // ------------------------------------------------------------------------
     protected void FireOpened () {
-        Opened();
+        if(Opened != null)
+            Opened();
     }
 
     // ------------------------------------------------------------------------
     protected void FireClosed () {
-        Closed();
+        if(Closed != null)
+            Closed();
     }
 }

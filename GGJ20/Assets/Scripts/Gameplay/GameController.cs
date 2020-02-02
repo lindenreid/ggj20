@@ -42,6 +42,7 @@ public class GameController : MonoBehaviour
             spirit.Reset();
         }
 
+        ChatRunner.MarkWaitingForGameStart();
         ChatRunner.OpenFirstChat();
     }
 

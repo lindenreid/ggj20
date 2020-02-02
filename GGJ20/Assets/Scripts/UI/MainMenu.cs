@@ -18,7 +18,6 @@ public class MainMenu : UIScreen
     // ------------------------------------------------------------------------
     public void StartGame () {
         gameObject.SetActive(false);
-        Navigation.OpenMap();
         GameController.StartGame();
         FireClosed();
     }

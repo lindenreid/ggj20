@@ -8,6 +8,7 @@ public class ChatRunner : MonoBehaviour
     // Variables
     // ------------------------------------------------------------------------
     public GameController GameController;
+    public Navigation Navigation;
     public ChatSO FirstChat;
     public ChatSO SecondFishChat;
 
@@ -31,6 +32,7 @@ public class ChatRunner : MonoBehaviour
 
     private int m_nextMessageIndex;
 
+    private bool m_waitingForGameStart;
     private bool m_waitingForGameEnd;
 
     // ------------------------------------------------------------------------
@@ -227,14 +229,25 @@ public class ChatRunner : MonoBehaviour
     }
 
     // ------------------------------------------------------------------------
+    public void MarkWaitingForGameStart() {
+        m_waitingForGameStart = true;
+    }
+
+    // ------------------------------------------------------------------------
     private void FinishChat () {
         m_activeChat.SpiritSO.VisitedChat = true;
 
         m_activeChat = null;
         ReachedLeafNode();
 
+        if(m_waitingForGameStart) {
+            Navigation.OpenMap();
+            m_waitingForGameEnd = false;
+        }
+
         if(m_waitingForGameEnd) {
             GameController.LastConvoFinished();
+            m_waitingForGameEnd = false;
         }
     }
 }

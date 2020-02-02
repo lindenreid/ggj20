@@ -5031,6 +5031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameController: {fileID: 1988944579}
+  Navigation: {fileID: 1988944576}
   FirstChat: {fileID: 11400000, guid: b7ba2b41842b1d54881ac1077cb7e5ee, type: 2}
   SecondFishChat: {fileID: 11400000, guid: 295069e25db136943927b5d32d93a3d2, type: 2}
 --- !u!114 &1988944581
