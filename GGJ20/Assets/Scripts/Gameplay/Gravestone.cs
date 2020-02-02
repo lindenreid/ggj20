@@ -10,6 +10,7 @@ public class Gravestone : ClickDetection
     // Variables
     // ------------------------------------------------------------------------
     public GameController GameController;
+    public AudioController AudioController;
 
     public ChatSO SuccessChat;
     public ChatSO NegativeChat;
@@ -33,9 +34,11 @@ public class Gravestone : ClickDetection
         } else if(GameController.GetWasDialoguePositive()) {
             ChatRunner.MarkWaitingForGameEnd();
             ChatRunner.StartConversation(SuccessChat);
+            AudioController.EndGame(true);
         } else {
             ChatRunner.MarkWaitingForGameEnd();
             ChatRunner.StartConversation(NegativeChat);
+            AudioController.EndGame(false);
         }
     }
 }

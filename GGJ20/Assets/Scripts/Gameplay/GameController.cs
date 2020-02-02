@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     public MainMenu MainMenu;
     public ChatRunner ChatRunner;
     public List<SpiritSO> AllSpirits;
+    public AudioController AudioController;
 
     // this should really be in its own data class but idgaf
     private int m_totalMessages;
@@ -27,6 +28,8 @@ public class GameController : MonoBehaviour
 
     // ------------------------------------------------------------------------
     public void StartGame () {
+        AudioController.StartGame();
+
         Inventory.ClearInventory();
         
         m_messageScore = 0;
