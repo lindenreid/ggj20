@@ -17,6 +17,8 @@ public class ChatUI : UIScreen
     public Text SpiritName;
     public Text SpiritText;
 
+    public float SpritIconSize = 2.0f;
+
     // ------------------------------------------------------------------------
     // Functions
     // ------------------------------------------------------------------------
@@ -41,6 +43,9 @@ public class ChatUI : UIScreen
 
         SpiritSO spirit = ChatRunner.ActiveChat.SpiritSO;
         SpiritIcon.sprite = spirit.Icon;
+        SpiritIcon.SetNativeSize();
+        SpiritIcon.rectTransform.sizeDelta *= SpritIconSize;
+
         SpiritName.text = spirit.Name;
         SpiritText.text = message.Messages[index];
     }

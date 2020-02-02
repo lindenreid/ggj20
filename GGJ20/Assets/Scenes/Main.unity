@@ -3350,6 +3350,7 @@ MonoBehaviour:
   SpiritIcon: {fileID: 1890300636}
   SpiritName: {fileID: 1851231600}
   SpiritText: {fileID: 1207987348}
+  SpritIconSize: 1.5
 --- !u!1 &1657534191
 GameObject:
   m_ObjectHideFlags: 0
@@ -3743,7 +3744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.6627451}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

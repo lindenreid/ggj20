@@ -16,6 +16,8 @@ public class ItemDialogueUI : UIScreen
     public GameObject AddButton;
     public GameObject RemoveButton;
 
+    public float ItemSizeDelta = 1.5f;
+
     private Item m_item;
     
     // ------------------------------------------------------------------------
@@ -26,7 +28,10 @@ public class ItemDialogueUI : UIScreen
 
         Title.text = item.ItemSO.Name;
         Description.text = item.ItemSO.Description;
+
         ItemImage.sprite = item.ItemSO.Icon;
+        ItemImage.SetNativeSize();
+        ItemImage.rectTransform.sizeDelta *= ItemSizeDelta;
 
         if(item.Owned) {
             AddButton.SetActive(false);
