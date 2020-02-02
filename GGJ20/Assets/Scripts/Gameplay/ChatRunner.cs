@@ -25,6 +25,8 @@ public class ChatRunner : MonoBehaviour
     private IEnumerator m_RunMessageCoroutine;
     private IEnumerator m_RunBubblesCoroutine;
 
+    private int m_nextMessageIndex;
+
     // settings
     public float MaxTimeBetweenMessages = 2f;
 
@@ -104,7 +106,7 @@ public class ChatRunner : MonoBehaviour
 
     // ------------------------------------------------------------------------
     // actually does the waiting to create delay between messages
-    private IEnumerator RunChatBubbles (MessageSO message) {
+    private IEnumerator RunChatBubbles (MessageSO message, int index = 0) {
         if(message == null) {
             Debug.LogError("Message null.");
             yield break;
@@ -113,10 +115,13 @@ public class ChatRunner : MonoBehaviour
         //Debug.Log("running chat bubble: " + message.Node);
 
         // visit all of the messages in this node
-        for (int i = 0; i < message.Messages.Length; i++) {
+        for (int i = index; i < message.Messages.Length; i++) {
+            //Debug.Log("visited message: " + message.Node + "." + i);
+            m_nextMessageIndex = i+1;
+            
             float t = message.Delays[i];
-            Debug.Log("visited message: " + message.Node + "." + i);
             VisitedMessage(message, i);
+
             yield return new WaitForSeconds(t);
         }
     }
@@ -136,7 +141,7 @@ public class ChatRunner : MonoBehaviour
             return;
         }
 
-        Debug.Log("running chat options: " + message.Node);
+        //Debug.Log("running chat options: " + message.Node);
 
         for(int i = 0; i < message.Options.Length; i++) {
             VisitedOption(message, i);
@@ -151,7 +156,7 @@ public class ChatRunner : MonoBehaviour
             return;
         }
 
-        Debug.Log("selected option " + selection + " for message " + message.Node);
+        //Debug.Log("selected option " + selection + " for message " + message.Node);
 
         // record in message that this option has been chosen
         message.SelectOption(message.Branch[selection]);
@@ -165,6 +170,28 @@ public class ChatRunner : MonoBehaviour
 
         // run next chat
         MoveConversation();
+    }
+
+    // ------------------------------------------------------------------------
+    public void ForceAdvanceChat () {
+        Debug.Log("Clicked");
+        if(m_RunBubblesCoroutine == null) {
+            Debug.LogWarning("coroutine null");
+            return;
+        }
+        
+        StopCoroutine(m_RunBubblesCoroutine);
+        
+        // this is bad because i want to just return to the function
+        // that the coroutine was originall started in
+        // once it's out of messages
+        // but for now we'll just hard-code progressing the convo
+        if(m_nextMessageIndex < m_lastMessage.Messages.Length) {
+            m_RunBubblesCoroutine = RunChatBubbles(m_lastMessage, m_nextMessageIndex);
+            StartCoroutine(m_RunBubblesCoroutine);
+        } else {
+            MoveConversation();
+        }
     }
 
     // ------------------------------------------------------------------------

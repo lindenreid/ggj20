@@ -12,7 +12,6 @@ public class ChatUI : UIScreen
     public GameObject PlayerChatParent;
     public Transform MessageOptionsParent;
     public GameObject MessageOptionPrefab;
-    public GameObject ExitButton;
 
     public Image SpiritIcon;
     public Text SpiritName;
@@ -38,7 +37,6 @@ public class ChatUI : UIScreen
 
         SpiritChatParent.SetActive(true);
         PlayerChatParent.SetActive(false);
-        ExitButton.SetActive(false);
         SpiritIcon.gameObject.SetActive(true);
 
         SpiritSO spirit = ChatRunner.ActiveChat.SpiritSO;
@@ -53,7 +51,6 @@ public class ChatUI : UIScreen
 
         SpiritChatParent.SetActive(false);
         PlayerChatParent.SetActive(true);
-        ExitButton.SetActive(false);
         SpiritIcon.gameObject.SetActive(true);
 
         GameObject bubble =
@@ -75,7 +72,7 @@ public class ChatUI : UIScreen
 
     // ------------------------------------------------------------------------
     private void HandleReachedLeafNode () {
-        ExitButton.SetActive(true);
+        Exit();
     }
 
     // ------------------------------------------------------------------------
@@ -84,7 +81,6 @@ public class ChatUI : UIScreen
 
         SpiritChatParent.SetActive(false);
         PlayerChatParent.SetActive(false);
-        ExitButton.SetActive(false);
         SpiritIcon.gameObject.SetActive(false);
     }
 }
