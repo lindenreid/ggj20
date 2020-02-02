@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Bird_16
+  m_EditorClassIdentifier: 
+  Node: 16
+  Sender: 5
+  Messages:
+  - "I guess you\u2019re right."
+  - I felt very confused because Rabbit seemed so angry! Maybe Rabbit misses Sorcerer
+    the most.
+  - "But I miss him a lot, too. I don\u2019t know what to do."
+  - 'Rabbit says he did something very very very bad. But he was so nice to me. '
+  - "I\u2019m sorry, maybe all this is confusing for you, too. I\u2019m better at
+    eating seeds than thinking so deeply\u2026.  "
+  Delays:
+  - 6
+  - 8
+  - 8
+  - 8
+  - 8
+  Options: []
+  MessageTypes: 
+  Branch: []
+  Selection: {fileID: 0}

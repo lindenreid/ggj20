@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Bird_14
+  m_EditorClassIdentifier: 
+  Node: 14
+  Sender: 5
+  Messages:
+  - "You want to know about my stick! Wow, it\u2019s been a while since anyone showed
+    interest!"
+  - Sorcerer went out walking one day, you see. He took lots of walks around the forest.
+  - He always talked to everyone, asked them how they were doing. I was out on that
+    same day, looking around for sticks and twigs and leaves and all sorts of treasures!
+  - 'I really like to take care of my house. My house is very important to me! '
+  - Sorcerer saw me and came over to ask what I was doing. I told Sorcerer that I
+    was very very very busy getting sticks to make my house stronger.
+  - Sorcerer told me that he would help me look for sticks!
+  - 'So he got on his knees and started looking with me even though it made him tired.
+    I was so happy! '
+  Delays:
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  Options: []
+  MessageTypes: 
+  Branch:
+  - {fileID: 11400000, guid: a643665267990b641a3e2afca441cb3f, type: 2}
+  Selection: {fileID: 0}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Bird_10
+  m_EditorClassIdentifier: 
+  Node: 10
+  Sender: 5
+  Messages:
+  - 'I saw that you were talking to the Fish during my morning flight!  '
+  - "Sorcerer was a special person! He could see us! Wow, I don\u2019t know how many
+    people who can actually see us! I mean, you can see us! "
+  - "Don\u2019t you think that\u2019s amazing?"
+  Delays:
+  - 8
+  - 8
+  - 8
+  Options: []
+  MessageTypes: 
+  Branch:
+  - {fileID: 11400000, guid: 2220a5e37a88fea4abd710b6ecf4e79c, type: 2}
+  Selection: {fileID: 0}

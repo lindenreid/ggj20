@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3927889c9357675449383c56179d7e17, type: 3}
+  m_Name: Chat_Bird_1
+  m_EditorClassIdentifier: 
+  ID: 0
+  SpiritSO: {fileID: 0}
+  Messages:
+  - {fileID: 11400000, guid: a5f9adbffa51b2b43b0f9d9061f689e8, type: 2}
+  - {fileID: 11400000, guid: b961d32a03b117f4aaba1c7ae397d0bb, type: 2}
+  - {fileID: 11400000, guid: 5c0ed56e69514c14eb1412ebe13ac2de, type: 2}
+  - {fileID: 11400000, guid: 0caed9b2f9f6c08479eb0a49e8e7a4ee, type: 2}
+  - {fileID: 11400000, guid: fd1e3d080d8d4a849af6e8d535b7ef27, type: 2}
+  - {fileID: 11400000, guid: 72aa72b68bdff46489f54b38c00cf938, type: 2}
+  - {fileID: 11400000, guid: ff282a6cdb6ffcd4a80bcdbdc3844c8e, type: 2}
+  - {fileID: 11400000, guid: 93bc60c73c7f71346b07032e84bc95c0, type: 2}
+  - {fileID: 11400000, guid: 7af19e7ae3a08d24da8bd5eb26af77fe, type: 2}
+  - {fileID: 11400000, guid: 84e2c09c2722a224e99b74c05a46d215, type: 2}
+  - {fileID: 11400000, guid: 3525ed45361236145ac76a4813415e8e, type: 2}
+  - {fileID: 11400000, guid: 2220a5e37a88fea4abd710b6ecf4e79c, type: 2}
+  - {fileID: 11400000, guid: d35f3ff6ed7a16c45bfb9b41f84b3943, type: 2}
+  - {fileID: 11400000, guid: 5566f8613c972ea48a1318b0a16381b2, type: 2}
+  - {fileID: 11400000, guid: 074833e9ea1eac64f89042143ab78218, type: 2}
+  - {fileID: 11400000, guid: a643665267990b641a3e2afca441cb3f, type: 2}
+  - {fileID: 11400000, guid: 7283608e362f28547a24caaccbd47d9c, type: 2}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Bird_12
+  m_EditorClassIdentifier: 
+  Node: 12
+  Sender: 5
+  Messages:
+  - 'The others have all been talking a lot since Sorcerer died. '
+  - "Rabbit talks to himself a lot! I wonder if he\u2019s okay. "
+  - 'I mean, I talk to myself a lot as well, but I feel okay! '
+  - "But I don\u2019t really know how I feel. I miss Sorcerer."
+  - "Sorcerer gave me presents! Sorcerer gave me a very nice stick for my house, so
+    I don\u2019t think he\u2019s all that bad!"
+  - ' I love my stick!'
+  Delays:
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  Options: []
+  MessageTypes: 
+  Branch:
+  - {fileID: 11400000, guid: 5566f8613c972ea48a1318b0a16381b2, type: 2}
+  Selection: {fileID: 0}
