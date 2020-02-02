@@ -28,13 +28,18 @@ public class GameController : MonoBehaviour
     // ------------------------------------------------------------------------
     public void StartGame () {
         Inventory.ClearInventory();
+        
         m_messageScore = 0;
         m_totalMessages = 0;
-        ChatRunner.OpenFirstChat();
+        m_visitedSecondFishChat = false;
+
+        ChatRunner.Reset();
 
         foreach(SpiritSO spirit in AllSpirits) {
             spirit.Reset();
         }
+
+        ChatRunner.OpenFirstChat();
     }
 
     // ------------------------------------------------------------------------

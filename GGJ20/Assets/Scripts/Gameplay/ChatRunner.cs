@@ -33,9 +33,6 @@ public class ChatRunner : MonoBehaviour
 
     private bool m_waitingForGameEnd;
 
-    // settings
-    public float MaxTimeBetweenMessages = 2f;
-
     // ------------------------------------------------------------------------
     // Properties
     // ------------------------------------------------------------------------
@@ -44,6 +41,13 @@ public class ChatRunner : MonoBehaviour
 
     // ------------------------------------------------------------------------
     // Functions
+    // ------------------------------------------------------------------------
+    public void Reset () {
+        m_nextMessageIndex = 0;
+        m_waitingForGameEnd = false;
+        m_lastMessage = null;
+    }
+
     // ------------------------------------------------------------------------
     public void OpenFirstChat () {
         StartConversation(FirstChat);
