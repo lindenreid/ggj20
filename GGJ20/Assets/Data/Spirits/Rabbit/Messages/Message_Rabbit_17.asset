@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Rabbit_17
+  m_EditorClassIdentifier: 
+  Node: 17
+  Sender: 1
+  Messages:
+  - "He said he was ill and needed power, but was he really telling the truth? To
+    think he would steal the forest\u2019s magic like that\u2026.."
+  - "I just can\u2019t believe it. He never said anything about it, never confided
+    in us! It was shocking\u2026 shocking\u2026."
+  Delays:
+  - 8
+  - 8
+  Options: []
+  MessageTypes: 
+  Branch: []
+  Selection: {fileID: 0}

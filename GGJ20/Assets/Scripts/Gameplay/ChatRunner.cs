@@ -139,8 +139,12 @@ public class ChatRunner : MonoBehaviour
             //Debug.Log("visited message: " + message.Node + "." + i);
             m_nextMessageIndex = i+1;
             
-            float t = message.Delays[i];
             VisitedMessage(message, i);
+
+            float t = 6;
+            if(message.Delays != null && i < message.Delays.Length) {
+                t = message.Delays[i];
+            }
 
             yield return new WaitForSeconds(t);
         }

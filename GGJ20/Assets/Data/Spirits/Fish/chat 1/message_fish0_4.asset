@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Rabbit_Message0
+  m_Name: message_fish0_4
   m_EditorClassIdentifier: 
-  Node: 0
-  Sender: 1
-  Messages:
-  - Hello...
-  - Who are you?
-  Delays:
-  - 4
-  - 4
-  Options: []
+  Node: 4
+  Sender: 0
+  Messages: []
+  Delays: []
+  Options:
+  - "I\u2026 I came here to investigate. The villagers seemed worried. Rumors of\u2026
+    voices at night?"
+  MessageTypes: 00000000
   Branch:
-  - {fileID: 11400000, guid: 8ce4f02feb9bbb04fa84df995e322e7a, type: 2}
+  - {fileID: 11400000, guid: 53ce22f5578efe643a3732e5357a865b, type: 2}
   Selection: {fileID: 0}

@@ -10,42 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Message_Turtle_8
+  m_Name: message_fish0_11
   m_EditorClassIdentifier: 
-  Node: 8
-  Sender: 3
+  Node: 11
+  Sender: 4
   Messages:
-  - Turtle went for walk.
-  - Try to climb up a hill.
-  - "Turtle is clumsy and fell on Turtle\u2019s back."
-  - "Turtle couldn\u2019t get up."
-  - "Sorcerer came and put me back on Turtle\u2019s feet."
-  - Turtle is....
-  - t
-  - h
-  - a
-  - n
-  - k
-  - f
-  - u
-  - l
+  - Make an offering to his grave.
+  - Everything that you need, you can find in this forest.
+  - Talk to the other spirits- they can help you.
+  - "At least\u2026 they hopefully will."
   Delays:
   - 8
   - 8
   - 8
   - 8
-  - 8
-  - 8
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
   Options: []
   MessageTypes: 
   Branch:
-  - {fileID: 11400000, guid: a22594fb272cfda4594b0fb8e2f6c608, type: 2}
+  - {fileID: 11400000, guid: c873bd19c8733354fb5bac1c76e94121, type: 2}
   Selection: {fileID: 0}

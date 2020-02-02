@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Message_fish_0
+  m_Name: message_fish0_15
   m_EditorClassIdentifier: 
-  Node: 0
-  Sender: 4
-  Messages:
-  - this is the opening chat with the fish
-  Delays:
-  - 6
-  Options: []
-  MessageTypes: 
-  Branch: []
+  Node: 15
+  Sender: 0
+  Messages: []
+  Delays: []
+  Options:
+  - Can you tell me about the Sorcerer?
+  MessageTypes: 00000000
+  Branch:
+  - {fileID: 11400000, guid: 0f8d9cbf6a2c04f408685e9881e5cf9a, type: 2}
   Selection: {fileID: 0}

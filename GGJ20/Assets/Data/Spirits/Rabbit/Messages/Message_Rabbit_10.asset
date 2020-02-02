@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Rabbit_10
+  m_EditorClassIdentifier: 
+  Node: 10
+  Sender: 1
+  Messages:
+  - For centuries, we were the protectors of this forest. I have witnessed many people
+    come and go over the years, from curious individuals to troublemakers.
+  - Sometimes, the troublemakers would bring weapons to destroy the forest. They would
+    try to plunder the area and steal what they could. It wasn't difficult to scare
+    them off, though.
+  - A glimpse of a shadowy silhouette... a mysterious snapping sound breaking apart
+    the silence.... a lamp floating with its own volition.... it was easy!
+  - No one ever got hurt. Although I can't say the same for their dreams at night.
+  Delays:
+  - 8
+  - 8
+  - 8
+  - 8
+  Options: []
+  MessageTypes: 
+  Branch:
+  - {fileID: 11400000, guid: e062c710ada052543a0aacef23686352, type: 2}
+  Selection: {fileID: 0}

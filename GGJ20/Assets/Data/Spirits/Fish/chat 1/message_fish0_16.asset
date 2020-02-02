@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: message_fish0_16
+  m_EditorClassIdentifier: 
+  Node: 16
+  Sender: 4
+  Messages:
+  - He was kind and dedicated to the forest.
+  - After he realized his calling, he spent most of his life attending to it.
+  - 'He protected it from those who tried to take advantage of the forest. The Sorcerer
+    defended our home with the goodwill of his magic. '
+  - He kept the spirits company.
+  - He was someone who we could truly call a friend....
+  - We always conversed over green tea.
+  - Long conversations are always best paired with tea.
+  Delays:
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  Options: []
+  MessageTypes: 
+  Branch: []
+  Selection: {fileID: 0}

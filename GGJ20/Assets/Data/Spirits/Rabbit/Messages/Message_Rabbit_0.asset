@@ -10,14 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Rabbit_Message3
+  m_Name: Message_Rabbit_0
   m_EditorClassIdentifier: 
-  Node: 3
+  Node: 0
   Sender: 1
   Messages:
-  - same lol
+  - Hello...
+  - Who are you?
   Delays:
   - 4
+  - 4
   Options: []
-  Branch: []
+  MessageTypes: 
+  Branch:
+  - {fileID: 11400000, guid: 94c6e900be72e1f49853fe5216bbc5d3, type: 2}
   Selection: {fileID: 0}

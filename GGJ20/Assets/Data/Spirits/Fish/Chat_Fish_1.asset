@@ -16,3 +16,19 @@ MonoBehaviour:
   SpiritSO: {fileID: 11400000, guid: 66b72c2ad07f45641bfcc96dc151a855, type: 2}
   Messages:
   - {fileID: 11400000, guid: a6ce4f0c4ebef5f409d8552a0db7eacd, type: 2}
+  - {fileID: 11400000, guid: 62e6655e91f61d8458a66f6d845b6cf5, type: 2}
+  - {fileID: 11400000, guid: a42c2b6cebe83374c8b9daae5612d37d, type: 2}
+  - {fileID: 11400000, guid: 95925522008380445a617303531d779d, type: 2}
+  - {fileID: 11400000, guid: 42b2e501db5e73d4da83103b388c8ea9, type: 2}
+  - {fileID: 11400000, guid: 53ce22f5578efe643a3732e5357a865b, type: 2}
+  - {fileID: 11400000, guid: e1caccd2be4df90489aaf8cb6923336b, type: 2}
+  - {fileID: 11400000, guid: e82791927d1e75649ab8ea8a8da6dd50, type: 2}
+  - {fileID: 11400000, guid: cfb28d16055d6224297e6f8b1aeaec12, type: 2}
+  - {fileID: 11400000, guid: 3100c34fee1cd3045badd92e2967baa3, type: 2}
+  - {fileID: 11400000, guid: 710e3dbab8298194bbd015acaf83b738, type: 2}
+  - {fileID: 11400000, guid: 22c7164403edbea4391361165c6679df, type: 2}
+  - {fileID: 11400000, guid: c873bd19c8733354fb5bac1c76e94121, type: 2}
+  - {fileID: 11400000, guid: e6d98377e1f883e4fae805efd49f55b7, type: 2}
+  - {fileID: 11400000, guid: 3724bc5638747e646a77fdea3c28bc06, type: 2}
+  - {fileID: 11400000, guid: e39e1d4555138dd4bb7430d48cb62392, type: 2}
+  - {fileID: 11400000, guid: 0f8d9cbf6a2c04f408685e9881e5cf9a, type: 2}

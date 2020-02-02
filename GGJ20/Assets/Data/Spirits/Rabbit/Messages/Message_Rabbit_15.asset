@@ -10,14 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Rabbit_Message2
+  m_Name: Message_Rabbit_15
   m_EditorClassIdentifier: 
-  Node: 2
+  Node: 15
   Sender: 1
   Messages:
-  - uhhh. nice
+  - The Sorcerer betrayed us!
+  - "I don\u2019t think the others really understand this\u2026"
+  - "He was trying to use the forest\u2019s magic for his own gain."
+  - To make himself more powerful.
   Delays:
-  - 4
+  - 6
+  - 6
+  - 6
+  - 6
   Options: []
-  Branch: []
+  MessageTypes: 
+  Branch:
+  - {fileID: 11400000, guid: edd91197915a13147b7bffe374719283, type: 2}
   Selection: {fileID: 0}

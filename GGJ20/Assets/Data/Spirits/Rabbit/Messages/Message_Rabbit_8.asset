@@ -10,42 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Message_Turtle_8
+  m_Name: Message_Rabbit_8
   m_EditorClassIdentifier: 
   Node: 8
-  Sender: 3
+  Sender: 1
   Messages:
-  - Turtle went for walk.
-  - Try to climb up a hill.
-  - "Turtle is clumsy and fell on Turtle\u2019s back."
-  - "Turtle couldn\u2019t get up."
-  - "Sorcerer came and put me back on Turtle\u2019s feet."
-  - Turtle is....
-  - t
-  - h
-  - a
-  - n
-  - k
-  - f
-  - u
-  - l
+  - "Many\u2026 "
+  - He spent most of his life here.
   Delays:
-  - 8
-  - 8
-  - 8
-  - 8
-  - 8
-  - 8
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 4
+  - 6
   Options: []
   MessageTypes: 
   Branch:
-  - {fileID: 11400000, guid: a22594fb272cfda4594b0fb8e2f6c608, type: 2}
+  - {fileID: 11400000, guid: e035b455294c7d14c8ad210657943ad3, type: 2}
   Selection: {fileID: 0}

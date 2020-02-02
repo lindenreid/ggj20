@@ -16,3 +16,15 @@ MonoBehaviour:
   SpiritSO: {fileID: 11400000, guid: 43febfb0640765c4ba01c270ac2a4504, type: 2}
   Messages:
   - {fileID: 11400000, guid: b3122022d2cb5f0469e49750ea287633, type: 2}
+  - {fileID: 11400000, guid: 00d6806aa1525cb499312d3cbf7e54b8, type: 2}
+  - {fileID: 11400000, guid: 7e48ce08df28b034e9cd3e123ff098f8, type: 2}
+  - {fileID: 11400000, guid: b163564198625704b8dbff61e93cc893, type: 2}
+  - {fileID: 11400000, guid: 0d6c9149424fe51428b01508a8fcd864, type: 2}
+  - {fileID: 11400000, guid: 2a9ff5cdb9cae4246938a8bfa7685aaa, type: 2}
+  - {fileID: 11400000, guid: 52f8b356587fa75459726a3bb30fcc7d, type: 2}
+  - {fileID: 11400000, guid: 0482a5cb17a6ba04bb1b4fe5ec017730, type: 2}
+  - {fileID: 11400000, guid: bc57b80b18091114facd02b11972578b, type: 2}
+  - {fileID: 11400000, guid: a22594fb272cfda4594b0fb8e2f6c608, type: 2}
+  - {fileID: 11400000, guid: 3dafff1f49e658f4cbcaa272345fe2bc, type: 2}
+  - {fileID: 11400000, guid: 8f01276237dda924499b9a082e342a6d, type: 2}
+  - {fileID: 11400000, guid: 48ea72fb14b77df44a43f984b2aaa6f6, type: 2}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Rabbit_11
+  m_EditorClassIdentifier: 
+  Node: 11
+  Sender: 0
+  Messages: []
+  Delays: []
+  Options:
+  - It sounds like you had many good memories with him.
+  - And then he became one of the troublemakers?
+  MessageTypes: 0100000002000000
+  Branch:
+  - {fileID: 11400000, guid: 46db50de3511dd2429683fffb0ef7fbb, type: 2}
+  - {fileID: 11400000, guid: 4c2654d9cc950f4449462b1b53016ebc, type: 2}
+  Selection: {fileID: 0}

@@ -10,17 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Rabbit_Message1
+  m_Name: Message_Rabbit_2
   m_EditorClassIdentifier: 
-  Node: 1
-  Sender: 0
-  Messages: []
-  Delays: []
-  Options:
-  - gay baby
-  - l a r g
-  MessageTypes: 0000000000000000
+  Node: 2
+  Sender: 1
+  Messages:
+  - '...'
+  - "We don\u2019t need that."
+  - "You should really ask before messing with a spirit\u2019s domain."
+  Delays:
+  - 1
+  - 6
+  - 6
+  Options: []
+  MessageTypes: 
   Branch:
-  - {fileID: 11400000, guid: a7a7618e4db5ff546b0ff88e2fe1c68f, type: 2}
-  - {fileID: 11400000, guid: 7e0843bbe305d8d4cbd07d3e867d5682, type: 2}
-  Selection: {fileID: 11400000, guid: a7a7618e4db5ff546b0ff88e2fe1c68f, type: 2}
+  - {fileID: 11400000, guid: c16a501c1df1bf341b5706a7af84b5a3, type: 2}
+  Selection: {fileID: 0}

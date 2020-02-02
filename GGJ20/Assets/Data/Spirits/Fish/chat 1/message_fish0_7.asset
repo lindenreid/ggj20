@@ -10,42 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Message_Turtle_8
+  m_Name: message_fish0_7
   m_EditorClassIdentifier: 
-  Node: 8
-  Sender: 3
+  Node: 7
+  Sender: 4
   Messages:
-  - Turtle went for walk.
-  - Try to climb up a hill.
-  - "Turtle is clumsy and fell on Turtle\u2019s back."
-  - "Turtle couldn\u2019t get up."
-  - "Sorcerer came and put me back on Turtle\u2019s feet."
-  - Turtle is....
-  - t
-  - h
-  - a
-  - n
-  - k
-  - f
-  - u
-  - l
+  - It is a long story. But there is a grave that is in need of restoration.
+  - It belongs to a great Sorcerer.
+  - 'Unless the grave is fixed, we cannot move on. '
   Delays:
   - 8
   - 8
   - 8
-  - 8
-  - 8
-  - 8
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
   Options: []
   MessageTypes: 
   Branch:
-  - {fileID: 11400000, guid: a22594fb272cfda4594b0fb8e2f6c608, type: 2}
+  - {fileID: 11400000, guid: cfb28d16055d6224297e6f8b1aeaec12, type: 2}
   Selection: {fileID: 0}

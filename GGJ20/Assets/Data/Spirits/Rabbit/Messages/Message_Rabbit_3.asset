@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Rabbit_3
+  m_EditorClassIdentifier: 
+  Node: 3
+  Sender: 0
+  Messages: []
+  Delays: []
+  Options:
+  - "I\u2019m sorry to disturb you. The Fish asked for help."
+  - Well, why not?
+  MessageTypes: 0100000002000000
+  Branch:
+  - {fileID: 11400000, guid: acf245eed8eec4548bbc82edd1d4666f, type: 2}
+  - {fileID: 11400000, guid: b067705173aafbc49959b82aac27acdd, type: 2}
+  Selection: {fileID: 0}
