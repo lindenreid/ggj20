@@ -18,9 +18,8 @@ MonoBehaviour:
   - Hello...
   - Who are you?
   Delays:
-  - 0
-  - 1
-  - 1
+  - 4
+  - 4
   Options: []
   Branch:
   - {fileID: 11400000, guid: 8ce4f02feb9bbb04fa84df995e322e7a, type: 2}

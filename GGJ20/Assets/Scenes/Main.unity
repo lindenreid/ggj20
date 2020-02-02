@@ -1074,7 +1074,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f9bebe4b1bc231a4dac7810ce5958be7, type: 3}
+    m_Font: {fileID: 12800000, guid: d12f4f5e1fe33d5439000014fe841ece, type: 3}
     m_FontSize: 87
     m_FontStyle: 0
     m_BestFit: 0
@@ -2879,7 +2879,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ce1cd6fc954feef4591045080022ae6b, type: 3}
+    m_Font: {fileID: 12800000, guid: d12f4f5e1fe33d5439000014fe841ece, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -3345,7 +3345,6 @@ MonoBehaviour:
   MessageOptionsParent: {fileID: 1114957483}
   MessageOptionPrefab: {fileID: 5906064967861352424, guid: 4064d064632769440b7329b0a8f5ced6,
     type: 3}
-  ExitButton: {fileID: 0}
   SpiritIcon: {fileID: 1890300636}
   SpiritName: {fileID: 1851231600}
   SpiritText: {fileID: 1207987348}
@@ -3671,7 +3670,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f9bebe4b1bc231a4dac7810ce5958be7, type: 3}
+    m_Font: {fileID: 12800000, guid: d12f4f5e1fe33d5439000014fe841ece, type: 3}
     m_FontSize: 87
     m_FontStyle: 0
     m_BestFit: 0

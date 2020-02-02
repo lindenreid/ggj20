@@ -62,6 +62,7 @@ public class Navigation : MonoBehaviour
 
     // ------------------------------------------------------------------------
     public void StartCameraZoom () {
+        if(_zoomIn || _zoomOut) return;
         _zoomiesLeft = CameraZoomDuration;
         _zoomIn = true;
     }
@@ -109,6 +110,8 @@ public class Navigation : MonoBehaviour
 
     // ------------------------------------------------------------------------
     public void OpenMap () {
+        if(_zoomIn || _zoomOut) return;
+
         MapParent.SetActive(true);
         LocationParent.SetActive(false);
         MapReturnButton.SetActive(false);
@@ -116,6 +119,8 @@ public class Navigation : MonoBehaviour
 
     // ------------------------------------------------------------------------
     public void OpenLocation (LocationSO locationSO, Transform target) {
+        if(_zoomIn || _zoomOut) return;
+        
         Vector3 targetDistance = transform.position - target.position;
         _moveSpeed = targetDistance / CameraZoomDuration;
         _moveSpeed.z = 0;
