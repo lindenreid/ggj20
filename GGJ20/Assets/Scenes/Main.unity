@@ -839,6 +839,8 @@ MonoBehaviour:
   CorrectOffering:
   - {fileID: 11400000, guid: d58427c62f40f4f4989c2c434f8e9be2, type: 2}
   - {fileID: 11400000, guid: c765e51bdfc2a3647b741b653468089b, type: 2}
+  - {fileID: 11400000, guid: be8e655ebc775aa46826ef9a54fc8fb0, type: 2}
+  - {fileID: 11400000, guid: 6cf604a1ae4e79241837ac358115d6b3, type: 2}
 --- !u!61 &264112826
 BoxCollider2D:
   m_ObjectHideFlags: 0

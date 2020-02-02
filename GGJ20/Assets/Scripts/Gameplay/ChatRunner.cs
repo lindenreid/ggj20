@@ -247,7 +247,6 @@ public class ChatRunner : MonoBehaviour
 
         if(m_waitingForGameEnd) {
             GameController.LastConvoFinished();
-            m_waitingForGameEnd = false;
         }
     }
 }
