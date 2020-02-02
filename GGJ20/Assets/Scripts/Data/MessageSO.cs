@@ -3,7 +3,10 @@ using UnityEngine;
 public enum Spirit {
     Player = 0,
     Rabbit = 1,
-    Dog = 2
+    Dog = 2,
+    Turtle = 3,
+    Fish = 4,
+    Bird = 5
 }
 
 [CreateAssetMenu(fileName = "Message", menuName = "GreenTea/ScriptableObjects/Message", order = 1)]
@@ -17,6 +20,7 @@ public class MessageSO : ScriptableObject
     public string[] Messages; // the text for the messages sent
 
     // all of the following map by index
+    public float[] Delays; // the delay before the corresponding message shows
     public string[] Options; // the text options
     public MessageSO[] Branch; // the next message
 

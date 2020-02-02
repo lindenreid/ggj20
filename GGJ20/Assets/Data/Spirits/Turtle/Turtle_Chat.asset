@@ -9,19 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Rabbit_Message0
+  m_Script: {fileID: 11500000, guid: 3927889c9357675449383c56179d7e17, type: 3}
+  m_Name: Turtle_Chat
   m_EditorClassIdentifier: 
-  Node: 0
-  Sender: 1
+  ID: 345
+  SpiritSO: {fileID: 11400000, guid: 43febfb0640765c4ba01c270ac2a4504, type: 2}
   Messages:
-  - Hello...
-  - Who are you?
-  Delays:
-  - 0
-  - 1
-  - 1
-  Options: []
-  Branch:
-  - {fileID: 11400000, guid: 8ce4f02feb9bbb04fa84df995e322e7a, type: 2}
-  Selection: {fileID: 0}
+  - {fileID: 11400000, guid: b3122022d2cb5f0469e49750ea287633, type: 2}

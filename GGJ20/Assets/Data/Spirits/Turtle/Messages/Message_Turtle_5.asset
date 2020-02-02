@@ -10,18 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Rabbit_Message0
+  m_Name: Message_Turtle_5
   m_EditorClassIdentifier: 
-  Node: 0
-  Sender: 1
-  Messages:
-  - Hello...
-  - Who are you?
-  Delays:
-  - 0
-  - 1
-  - 1
-  Options: []
+  Node: 5
+  Sender: 0
+  Messages: []
+  Delays: []
+  Options:
+  - How do you feel about him now?
+  - Did he betray you too?
   Branch:
-  - {fileID: 11400000, guid: 8ce4f02feb9bbb04fa84df995e322e7a, type: 2}
+  - {fileID: 11400000, guid: 52f8b356587fa75459726a3bb30fcc7d, type: 2}
+  - {fileID: 11400000, guid: 52f8b356587fa75459726a3bb30fcc7d, type: 2}
   Selection: {fileID: 0}

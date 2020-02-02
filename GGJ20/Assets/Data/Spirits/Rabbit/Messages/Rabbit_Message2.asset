@@ -16,6 +16,8 @@ MonoBehaviour:
   Sender: 1
   Messages:
   - uhhh. nice
+  Delays:
+  - 0
   Options: []
   Branch: []
   Selection: {fileID: 0}

@@ -9,15 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Message_Success0
+  m_Script: {fileID: 11500000, guid: 978431353792a594cab7698a6c5885a2, type: 3}
+  m_Name: Turtle_Spirit
   m_EditorClassIdentifier: 
-  Node: 0
-  Sender: 2
-  Messages:
-  - good job, you did it. the end
-  Delays:
-  - 0
-  Options: []
-  Branch: []
-  Selection: {fileID: 0}
+  Name: Turtle
+  Icon: {fileID: 21300000, guid: ff8a2076ef3ddb04d80b498d683a16d8, type: 3}
+  Chat: {fileID: 11400000, guid: d56d22a3d6e60c447ad9f9c5a283af3d, type: 2}

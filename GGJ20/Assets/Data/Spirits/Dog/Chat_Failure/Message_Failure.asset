@@ -17,6 +17,9 @@ MonoBehaviour:
   Messages:
   - This offering doesn't seem to have any effect...
   - Maybe try another.
+  Delays:
+  - 0
+  - 1
   Options: []
   Branch: []
   Selection: {fileID: 0}

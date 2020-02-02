@@ -10,18 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Rabbit_Message0
+  m_Name: Message_Turtle_4
   m_EditorClassIdentifier: 
-  Node: 0
-  Sender: 1
+  Node: 4
+  Sender: 3
   Messages:
-  - Hello...
-  - Who are you?
+  - O f  c o u r s e .
+  - H e  w a s . . .
+  - a
+  - f
+  - r
+  - i
+  - e
+  - n
+  - d
   Delays:
-  - 0
+  - 5
+  - 5
+  - 5
+  - 1
+  - 1
+  - 1
+  - 1
   - 1
   - 1
   Options: []
   Branch:
-  - {fileID: 11400000, guid: 8ce4f02feb9bbb04fa84df995e322e7a, type: 2}
+  - {fileID: 11400000, guid: 2a9ff5cdb9cae4246938a8bfa7685aaa, type: 2}
   Selection: {fileID: 0}

@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Rabbit_Message0
+  m_Name: Message_Turtle_6
   m_EditorClassIdentifier: 
-  Node: 0
-  Sender: 1
+  Node: 6
+  Sender: 3
   Messages:
-  - Hello...
-  - Who are you?
+  - Turtle likes Sorcerer.
+  - "Turtle\u2026. Thinks Sorcerer good person."
+  - Sorcerer helped Turtle.
   Delays:
-  - 0
-  - 1
-  - 1
+  - 6
+  - 6
+  - 6
   Options: []
   Branch:
-  - {fileID: 11400000, guid: 8ce4f02feb9bbb04fa84df995e322e7a, type: 2}
+  - {fileID: 11400000, guid: 0482a5cb17a6ba04bb1b4fe5ec017730, type: 2}
   Selection: {fileID: 0}

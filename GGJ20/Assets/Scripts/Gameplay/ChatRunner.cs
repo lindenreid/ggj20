@@ -114,14 +114,10 @@ public class ChatRunner : MonoBehaviour
 
         // visit all of the messages in this node
         for (int i = 0; i < message.Messages.Length; i++) {
-            float t = MaxTimeBetweenMessages;
-            if(i == 0 || message.HasOptions) {
-                t = 0;
-            }
-            yield return new WaitForSeconds(t);
+            float t = message.Delays[i];
             Debug.Log("visited message: " + message.Node + "." + i);
-
             VisitedMessage(message, i);
+            yield return new WaitForSeconds(t);
         }
     }
 
