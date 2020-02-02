@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3927889c9357675449383c56179d7e17, type: 3}
   m_Name: Chat_Fish_2
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 55
   SpiritSO: {fileID: 11400000, guid: 66b72c2ad07f45641bfcc96dc151a855, type: 2}
   Messages:
   - {fileID: 11400000, guid: e30e7048271062d41a3ccac012dad1f5, type: 2}
+  - {fileID: 11400000, guid: baf47e4357f419b479892dd571ea9693, type: 2}
+  - {fileID: 11400000, guid: 0682ecdb8c33ce24483712eb0277c5da, type: 2}
+  - {fileID: 11400000, guid: fdbb58166d4572240a46836ab4fcd75a, type: 2}
+  - {fileID: 11400000, guid: a98afd83a6a43254d83d8215e8a84444, type: 2}
+  - {fileID: 11400000, guid: 17cb9176847eed14ea1204704014a9da, type: 2}
+  - {fileID: 11400000, guid: b3ddabc71602e1f41a43b4ee464bc0d2, type: 2}
+  - {fileID: 11400000, guid: 5e26bc5bb16f82f4795130bcf451343c, type: 2}
+  - {fileID: 11400000, guid: 2a872674ca1c56a4bbd9de9a16740b32, type: 2}
+  - {fileID: 11400000, guid: e275b237688e43342bce5af83d891328, type: 2}
+  - {fileID: 11400000, guid: 1d5bf08cafdc2604a859548702a9e428, type: 2}
+  - {fileID: 11400000, guid: a35098d461bb71c4b8bcd952469b803b, type: 2}

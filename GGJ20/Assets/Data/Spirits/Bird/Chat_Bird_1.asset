@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Chat_Bird_1
   m_EditorClassIdentifier: 
   ID: 0
-  SpiritSO: {fileID: 0}
+  SpiritSO: {fileID: 11400000, guid: bd40011abeeb2344483d01966f1c9ce0, type: 2}
   Messages:
   - {fileID: 11400000, guid: a5f9adbffa51b2b43b0f9d9061f689e8, type: 2}
   - {fileID: 11400000, guid: b961d32a03b117f4aaba1c7ae397d0bb, type: 2}

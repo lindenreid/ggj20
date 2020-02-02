@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Fish2_2
+  m_EditorClassIdentifier: 
+  Node: 2
+  Sender: 4
+  Messages:
+  - "Yes, you have heard from the Rabbit\u2019s anger, the Bird\u2019s confusion,
+    and the Turtle\u2019s grief."
+  - The passing of the Sorcerer was truly a time of great lament for all of us.
+  - He was gravely ill. In his moment of desperation, he sought the magic of the forest
+    to cure himself.
+  - However, the forest does not take kindly to those who attempt to steal its magic.
+  - 'Although he protected us, he chose the wrong way to protect himself. '
+  Delays:
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  Options: []
+  MessageTypes: 
+  Branch:
+  - {fileID: 11400000, guid: fdbb58166d4572240a46836ab4fcd75a, type: 2}
+  Selection: {fileID: 0}

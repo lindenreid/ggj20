@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 978431353792a594cab7698a6c5885a2, type: 3}
-  m_Name: RabbitSO
+  m_Name: Spirit_Turtle
   m_EditorClassIdentifier: 
-  Name: Rabbit
-  Icon: {fileID: 21300000, guid: 8aa72ca4cfa3ad14c85303b783bcb0ff, type: 3}
-  Chat: {fileID: 11400000, guid: 595dee4a002864a49bbee5474e0a1bcc, type: 2}
-  SecondChat: {fileID: 11400000, guid: e585d079509f6e4469b3a50f4bc09a79, type: 2}
-  VisitedChat: 1
+  Name: Turtle
+  Icon: {fileID: 21300000, guid: ff8a2076ef3ddb04d80b498d683a16d8, type: 3}
+  Chat: {fileID: 11400000, guid: d56d22a3d6e60c447ad9f9c5a283af3d, type: 2}
+  SecondChat: {fileID: 11400000, guid: 8e4c0ac11a77c374099617e36df17ea9, type: 2}
+  VisitedChat: 0

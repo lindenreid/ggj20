@@ -10,16 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Message_Fish2_0
+  m_Name: Message_Fish2_8
   m_EditorClassIdentifier: 
-  Node: 0
+  Node: 8
   Sender: 4
   Messages:
-  - "Ah, you\u2019re back. How are you faring, traveler?"
+  - You may be right.
+  - "At that time, he was blinded by the severity of his own illness. I couldn\u2019t
+    imagine the amount of pain he must have experienced in his final moments."
+  - Even in death, he is stuck in limbo by the chains of his own guilt.
+  - 'Perhaps it would be better for all of us to move on. '
   Delays:
   - 6
+  - 8
+  - 8
+  - 8
   Options: []
   MessageTypes: 
   Branch:
-  - {fileID: 11400000, guid: baf47e4357f419b479892dd571ea9693, type: 2}
+  - {fileID: 11400000, guid: 1d5bf08cafdc2604a859548702a9e428, type: 2}
   Selection: {fileID: 0}

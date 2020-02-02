@@ -10,16 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Message_Fish2_0
+  m_Name: Message_Fish2_6
   m_EditorClassIdentifier: 
-  Node: 0
+  Node: 6
   Sender: 4
   Messages:
-  - "Ah, you\u2019re back. How are you faring, traveler?"
+  - Yes. We can feel his guilt and heavy remorse lingering in the air.
+  - The forest is well attuned to him.
+  - He is trapped by the foolishness of his own actions.
   Delays:
-  - 6
+  - 8
+  - 8
+  - 8
   Options: []
   MessageTypes: 
   Branch:
-  - {fileID: 11400000, guid: baf47e4357f419b479892dd571ea9693, type: 2}
+  - {fileID: 11400000, guid: 5e26bc5bb16f82f4795130bcf451343c, type: 2}
   Selection: {fileID: 0}

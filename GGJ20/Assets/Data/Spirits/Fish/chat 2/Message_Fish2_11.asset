@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Message_Fish2_0
+  m_Name: Message_Fish2_11
   m_EditorClassIdentifier: 
-  Node: 0
+  Node: 13
   Sender: 4
   Messages:
-  - "Ah, you\u2019re back. How are you faring, traveler?"
+  - 'Thank you for your advice, traveler. The spirits are glad to have met you. '
   Delays:
-  - 6
+  - 8
   Options: []
   MessageTypes: 
-  Branch:
-  - {fileID: 11400000, guid: baf47e4357f419b479892dd571ea9693, type: 2}
+  Branch: []
   Selection: {fileID: 0}

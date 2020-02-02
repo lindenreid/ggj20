@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Fish2_4
+  m_EditorClassIdentifier: 
+  Node: 4
+  Sender: 4
+  Messages:
+  - From the depths of my heart, I do believe there was a way.
+  - As spirits, we possess abilities that other beings do not. Perhaps if he had talked
+    to us, we would have been able to save him.
+  - "There is not a single day that passes where I do not think of the Sorcerer\u2019s
+    final moments."
+  - Sometimes, I blame myself for not helping more.
+  Delays:
+  - 8
+  - 8
+  - 8
+  - 8
+  Options: []
+  MessageTypes: 
+  Branch:
+  - {fileID: 11400000, guid: 17cb9176847eed14ea1204704014a9da, type: 2}
+  Selection: {fileID: 0}

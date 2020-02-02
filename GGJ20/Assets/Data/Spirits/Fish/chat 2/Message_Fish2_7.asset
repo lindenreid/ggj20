@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
+  m_Name: Message_Fish2_7
+  m_EditorClassIdentifier: 
+  Node: 7
+  Sender: 0
+  Messages: []
+  Delays: []
+  Options:
+  - "Can you and the other spirits forgive him? After listening to everyone, I still
+    believe he was a good person. Desperation brought out a side of him that even
+    he didn\u2019t expect."
+  - "Those actions of his cost the trust of his closest friends. After talking to
+    everyone, I could see how hurt and confused they were, despite everything that
+    had happened. I\u2019m not sure if this is something that can be easily forgiven. "
+  MessageTypes: 0100000002000000
+  Branch:
+  - {fileID: 11400000, guid: 2a872674ca1c56a4bbd9de9a16740b32, type: 2}
+  - {fileID: 11400000, guid: e275b237688e43342bce5af83d891328, type: 2}
+  Selection: {fileID: 0}

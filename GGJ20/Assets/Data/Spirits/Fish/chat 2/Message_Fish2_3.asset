@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ae7811118abc44d9e3a3f88356fa2a, type: 3}
-  m_Name: Message_Fish2_0
+  m_Name: Message_Fish2_3
   m_EditorClassIdentifier: 
-  Node: 0
-  Sender: 4
-  Messages:
-  - "Ah, you\u2019re back. How are you faring, traveler?"
-  Delays:
-  - 6
-  Options: []
-  MessageTypes: 
+  Node: 3
+  Sender: 0
+  Messages: []
+  Delays: []
+  Options:
+  - Was there any way to save the Sorcerer?
+  MessageTypes: 00000000
   Branch:
-  - {fileID: 11400000, guid: baf47e4357f419b479892dd571ea9693, type: 2}
+  - {fileID: 11400000, guid: a98afd83a6a43254d83d8215e8a84444, type: 2}
   Selection: {fileID: 0}
