@@ -6,6 +6,7 @@ public class GameController : MonoBehaviour
     // Variables
     // ------------------------------------------------------------------------
     public Inventory Inventory;
+    public MainMenu MainMenu;
 
     // this should really be in its own data class but idgaf
     private int m_totalMessages;
@@ -14,8 +15,10 @@ public class GameController : MonoBehaviour
     // ------------------------------------------------------------------------
     // Functions
     // ------------------------------------------------------------------------
-    void Start () {
+    public void StartGame () {
         Inventory.ClearInventory();
+        m_messageScore = 0;
+        m_totalMessages = 0;
     }
 
     // ------------------------------------------------------------------------
@@ -30,6 +33,11 @@ public class GameController : MonoBehaviour
                 m_totalMessages ++;
                 break;
         }
+    }
+
+    // ------------------------------------------------------------------------
+    public void LastConvoFinished () {
+        MainMenu.Open();
     }
 
     // ------------------------------------------------------------------------

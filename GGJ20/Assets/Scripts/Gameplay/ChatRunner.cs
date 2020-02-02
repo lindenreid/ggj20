@@ -29,6 +29,8 @@ public class ChatRunner : MonoBehaviour
 
     private int m_nextMessageIndex;
 
+    private bool m_waitingForGameEnd;
+
     // settings
     public float MaxTimeBetweenMessages = 2f;
 
@@ -200,8 +202,17 @@ public class ChatRunner : MonoBehaviour
     }
 
     // ------------------------------------------------------------------------
+    public void MarkWaitingForGameEnd() {
+        m_waitingForGameEnd = true;
+    }
+
+    // ------------------------------------------------------------------------
     private void FinishChat () {
         m_activeChat = null;
         ReachedLeafNode();
+
+        if(m_waitingForGameEnd) {
+            GameController.LastConvoFinished();
+        }
     }
 }

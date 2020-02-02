@@ -3,6 +3,7 @@ using System.Linq;
 
 using UnityEngine;
 
+// this class is op
 public class Gravestone : ClickDetection
 {
     // ------------------------------------------------------------------------
@@ -30,8 +31,10 @@ public class Gravestone : ClickDetection
         if(!success) {
             ChatRunner.StartConversation(FailureChat);
         } else if(GameController.GetWasDialoguePositive()) {
+            ChatRunner.MarkWaitingForGameEnd();
             ChatRunner.StartConversation(SuccessChat);
         } else {
+            ChatRunner.MarkWaitingForGameEnd();
             ChatRunner.StartConversation(NegativeChat);
         }
     }
