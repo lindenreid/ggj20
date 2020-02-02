@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -8,19 +10,31 @@ public class GameController : MonoBehaviour
     public Inventory Inventory;
     public MainMenu MainMenu;
     public ChatRunner ChatRunner;
+    public List<SpiritSO> AllSpirits;
 
     // this should really be in its own data class but idgaf
     private int m_totalMessages;
     private int m_messageScore;
 
+    private bool m_visitedSecondFishChat;
+
     // ------------------------------------------------------------------------
     // Functions
+    // ------------------------------------------------------------------------
+    void Awake () {
+        ChatRunner.ReachedLeafNode += HandleReachedLeafNode;
+    }
+
     // ------------------------------------------------------------------------
     public void StartGame () {
         Inventory.ClearInventory();
         m_messageScore = 0;
         m_totalMessages = 0;
         ChatRunner.OpenFirstChat();
+
+        foreach(SpiritSO spirit in AllSpirits) {
+            spirit.Reset();
+        }
     }
 
     // ------------------------------------------------------------------------
@@ -52,5 +66,22 @@ public class GameController : MonoBehaviour
         float score = (float)m_messageScore / (float)m_totalMessages;
         Debug.Log("score: " + score);
         return score >= 0.5f;
+    }
+
+    // ------------------------------------------------------------------------
+    private void HandleReachedLeafNode () {
+        if(m_visitedSecondFishChat) return;
+
+        bool allVisited = true;
+        foreach(SpiritSO spirit in AllSpirits) {
+            if(!spirit.VisitedChat) {
+                allVisited = false;
+            }
+        }
+
+        if(allVisited) {
+            m_visitedSecondFishChat = true;
+            ChatRunner.OpenSecondFishChat();
+        }
     }
 }

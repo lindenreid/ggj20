@@ -9,6 +9,7 @@ public class ChatRunner : MonoBehaviour
     // ------------------------------------------------------------------------
     public GameController GameController;
     public ChatSO FirstChat;
+    public ChatSO SecondFishChat;
 
     // hook into these with your UI class in order to draw chat bubbles
     public delegate void MessageDelegate(MessageSO message, int index);
@@ -46,6 +47,11 @@ public class ChatRunner : MonoBehaviour
     // ------------------------------------------------------------------------
     public void OpenFirstChat () {
         StartConversation(FirstChat);
+    }
+
+    // ------------------------------------------------------------------------
+    public void OpenSecondFishChat () {
+        StartConversation(SecondFishChat);
     }
 
     // ------------------------------------------------------------------------
@@ -214,6 +220,8 @@ public class ChatRunner : MonoBehaviour
 
     // ------------------------------------------------------------------------
     private void FinishChat () {
+        m_activeChat.SpiritSO.VisitedChat = true;
+
         m_activeChat = null;
         ReachedLeafNode();
 

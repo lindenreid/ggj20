@@ -4634,6 +4634,9 @@ MonoBehaviour:
   Inventory: {fileID: 1988944578}
   MainMenu: {fileID: 1331228891}
   ChatRunner: {fileID: 1988944580}
+  AllSpirits:
+  - {fileID: 11400000, guid: 43febfb0640765c4ba01c270ac2a4504, type: 2}
+  - {fileID: 11400000, guid: 392452b8c14f793428e268b89b4e9068, type: 2}
 --- !u!114 &1988944580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4647,7 +4650,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameController: {fileID: 1988944579}
-  FirstChat: {fileID: 11400000, guid: 595dee4a002864a49bbee5474e0a1bcc, type: 2}
+  FirstChat: {fileID: 11400000, guid: b7ba2b41842b1d54881ac1077cb7e5ee, type: 2}
+  SecondFishChat: {fileID: 11400000, guid: 295069e25db136943927b5d32d93a3d2, type: 2}
   MaxTimeBetweenMessages: 2
 --- !u!1 &2010557648
 GameObject:
