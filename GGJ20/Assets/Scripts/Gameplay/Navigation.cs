@@ -28,6 +28,8 @@ public class Navigation : MonoBehaviour
     Vector3 _graveStartingPOS;
     Vector3 _forestStartingScale;
     Vector3 _forestStartingPOS;
+    Vector3 _cottageStartingScale;
+    Vector3 _cottageStartingPOS;
     
     [SerializeField]
     Transform _targetSpriteLocation;
@@ -37,6 +39,9 @@ public class Navigation : MonoBehaviour
 
     [SerializeField]
     GameObject _mapIconForest;
+
+    [SerializeField]
+    GameObject _mapIconCottage;
     
     float _targetSpriteSize = 1.75f;
     float _spriteMoveTime = 0.5f;
@@ -64,6 +69,9 @@ public class Navigation : MonoBehaviour
 
         _graveStartingScale = _mapIconGrave.transform.localScale;
         _graveStartingPOS = _mapIconGrave.transform.position;
+
+        _cottageStartingScale = _mapIconCottage.transform.localScale;
+        _cottageStartingPOS = _mapIconCottage.transform.position;
     }
 
     // ------------------------------------------------------------------------
@@ -117,7 +125,7 @@ public class Navigation : MonoBehaviour
         // activate location stuff
         //MapParent.SetActive(false);
         LocationParent.SetActive(true);
-        MapReturnButton.SetActive(true);
+       
 
         // i don't literally care that this is bad
         // scenes who? idk her
@@ -180,10 +188,17 @@ public class Navigation : MonoBehaviour
         if (_selectedSprite.name.Contains("Forest"))
         {
             _mapIconGrave.gameObject.SetActive(false);
+            _mapIconCottage.gameObject.SetActive(false);
+        }
+        else if(_selectedSprite.name.Contains("Grave"))
+        {
+            _mapIconForest.gameObject.SetActive(false);
+            _mapIconCottage.gameObject.SetActive(false);
         }
         else
         {
             _mapIconForest.gameObject.SetActive(false);
+            _mapIconGrave.gameObject.SetActive(false);
         }
     }
     
@@ -193,15 +208,20 @@ public class Navigation : MonoBehaviour
     {
         _mapIconForest.SetActive(true);
         _mapIconGrave.SetActive(true);
+        _mapIconCottage.SetActive(true);
         
         _mapIconForest.GetComponent<MapIcon>().m_MaskFade.ResetMask();
         _mapIconGrave.GetComponent<MapIcon>().m_MaskFade.ResetMask();
+        _mapIconCottage.GetComponent<MapIcon>().m_MaskFade.ResetMask();
 
         _mapIconForest.transform.position = _forestStartingPOS;
         _mapIconForest.transform.localScale = _forestStartingScale;
 
         _mapIconGrave.transform.position = _graveStartingPOS;
         _mapIconGrave.transform.localScale = _graveStartingScale;
+
+        _mapIconCottage.transform.position = _cottageStartingPOS;
+        _mapIconCottage.transform.localScale = _cottageStartingScale;
 
 
     }
