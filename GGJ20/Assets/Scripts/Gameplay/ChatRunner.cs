@@ -8,6 +8,7 @@ public class ChatRunner : MonoBehaviour
     // Variables
     // ------------------------------------------------------------------------
     public GameController GameController;
+    public ChatSO FirstChat;
 
     // hook into these with your UI class in order to draw chat bubbles
     public delegate void MessageDelegate(MessageSO message, int index);
@@ -42,6 +43,11 @@ public class ChatRunner : MonoBehaviour
 
     // ------------------------------------------------------------------------
     // Functions
+    // ------------------------------------------------------------------------
+    public void OpenFirstChat () {
+        StartConversation(FirstChat);
+    }
+
     // ------------------------------------------------------------------------
     public void StartConversation (ChatSO chat) {
         m_activeChat = chat;

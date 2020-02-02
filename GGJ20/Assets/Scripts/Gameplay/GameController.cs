@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
     // ------------------------------------------------------------------------
     public Inventory Inventory;
     public MainMenu MainMenu;
+    public ChatRunner ChatRunner;
 
     // this should really be in its own data class but idgaf
     private int m_totalMessages;
@@ -19,6 +20,7 @@ public class GameController : MonoBehaviour
         Inventory.ClearInventory();
         m_messageScore = 0;
         m_totalMessages = 0;
+        ChatRunner.OpenFirstChat();
     }
 
     // ------------------------------------------------------------------------
