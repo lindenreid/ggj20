@@ -15,4 +15,5 @@ MonoBehaviour:
   Name: Stick
   Description: '... sticky.'
   Icon: {fileID: 21300000, guid: 966594944074bc3428775c3da2f54b8a, type: 3}
+  BagIcon: {fileID: 21300000, guid: 4c873e623675bef429a5c81388d9318f, type: 3}
   CanTake: 1

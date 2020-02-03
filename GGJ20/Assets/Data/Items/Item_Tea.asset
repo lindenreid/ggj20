@@ -15,4 +15,5 @@ MonoBehaviour:
   Name: Tea Cup
   Description: The tea stain at the bottom of the cup kinda looks like a Shiba Inu.
   Icon: {fileID: 21300000, guid: 4e330baf1d4e9154fb1df8d3ecfd2721, type: 3}
+  BagIcon: {fileID: 21300000, guid: 57d730baf4970ee4e8399b11ce02c5b6, type: 3}
   CanTake: 1

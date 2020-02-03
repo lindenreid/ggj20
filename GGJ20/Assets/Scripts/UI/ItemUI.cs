@@ -13,7 +13,7 @@ public class ItemUI : MonoBehaviour
     // Functions
     // ------------------------------------------------------------------------
     public void SetItem (Item item, ItemDialogueUI itemUI) {
-        Image.sprite = item.ItemSO.Icon;
+        Image.sprite = item.ItemSO.BagIcon;
 
         Button.onClick.AddListener(
             delegate {itemUI.Open(item);}

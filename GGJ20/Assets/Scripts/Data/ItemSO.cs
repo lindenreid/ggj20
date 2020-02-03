@@ -9,5 +9,6 @@ public class ItemSO : ScriptableObject
     public string Name;
     public string Description;
     public Sprite Icon;
+    public Sprite BagIcon;
     public bool CanTake;
 }
