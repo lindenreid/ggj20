@@ -21,5 +21,6 @@ MonoBehaviour:
   - 8
   Options: []
   MessageTypes: 
-  Branch: []
+  Branch:
+  - {fileID: 11400000, guid: 3f13c78889e703546a249180cd2a34eb, type: 2}
   Selection: {fileID: 0}

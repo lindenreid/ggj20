@@ -242,7 +242,7 @@ public class ChatRunner : MonoBehaviour
 
         if(m_waitingForGameStart) {
             Navigation.OpenMap();
-            m_waitingForGameEnd = false;
+            m_waitingForGameStart = false;
         }
 
         if(m_waitingForGameEnd) {
